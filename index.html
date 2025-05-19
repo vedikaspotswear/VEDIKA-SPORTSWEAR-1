@@ -100,7 +100,110 @@ text-align: center;
 section.about p, .contact-section p {
 line-height: 1.6;
 font-size: 1rem;
+color: #444;<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vedika Sports Wear</title>
+<meta name="description" content="Vedika Sports Wear - Custom Kabaddi, Cricket, Football kits and school uniforms from Launa, Jalaun." />
+<meta name="keywords" content="Vedika Sports Wear, Kabaddi Kit, Cricket Jersey, School Uniforms, Custom Sportswear, Jalaun, Launa" />
+<link rel="icon" href="https://via.placeholder.com/32x32?text=V" type="image/png" />
+<style>
+body {
+font-family: Arial, sans-serif;
+margin:0; padding:0;
+background-color: #f9f9f9;
+color: #333;
+}
+header {
+background-color: #1a1a1a;
+color: white;
+padding: 25px 15px;
+text-align: center;
+}
+header h1 {
+margin: 0 0 8px;
+font-size: 2.5rem;
+}
+header p {
+margin: 0;
+font-style: italic;
+font-size: 1.1rem;
+color: #ddd;
+}
+nav {
+background: #333;
+text-align: center;
+padding: 12px 0;
+}
+nav a {
+color: white;
+margin: 0 18px;
+text-decoration: none;
+font-weight: 600;
+font-size: 1rem;
+}
+nav a:hover {
+text-decoration: underline;
+}
+section.catalog {
+max-width: 1100px;
+margin: 30px auto;
+padding: 0 15px;
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+gap: 20px;
+}
+.item {
+background: white;
+padding: 18px;
+border-radius: 10px;
+box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+transition: transform 0.2s ease;
+}
+.item:hover {
+transform: translateY(-5px);
+}
+.item img {
+width: 100%;
+border-radius: 10px;
+margin-bottom: 12px;
+}
+.item h3 {
+margin: 8px 0 6px;
+font-size: 1.3rem;
+color: #1a1a1a;
+}
+.item p {
+font-size: 0.95rem;
+margin: 6px 0 10px;
+color: #555;
+}
+.price {
+font-weight: 700;
+font-size: 1.1rem;
+color: #007BFF;
+}
+section.about, .contact-section {
+max-width: 900px;
+margin: 40px auto;
+background: white;
+padding: 25px 20px;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgb(0 0 0 / 0.07);
+}
+section.about h2, .contact-section h2 {
+margin-bottom: 15px;
+font-size: 2rem;
+color: #1a1a1a;
+text-align: center;
+}
+section.about p, .contact-section p {
+line-height: 1.6;
+font-size: 1rem;
 color: #444;
+
 }
 .contact-section {
 text-align: center;
@@ -163,6 +266,20 @@ font-size: 0.9rem;
 </nav>
 
 <section id="catalog" class="catalog" aria-label="Product Catalog">
+  <section id="products" style="padding: 20px;">
+  <h2>Available Kits</h2>
+
+  <div style="border:1px solid #ccc; padding:15px; margin:10px 0; border-radius:10px;">
+    <img src="images/kabaddi-kit-lycra.jpg" alt="Kabaddi Kit" style="width:100%; max-width:300px; display:block; margin:auto;">
+    <h3 style="text-align:center;">Kabaddi Kit</h3>
+    <p><strong>Sublimation:</strong> Full</p>
+    <p><strong>Fabric:</strong> Lycra</p>
+    <p><strong>Price:</strong> ₹699</p>
+    <a href="https://wa.me/917376354681?text=Hi%20Deepraj%2C%20I%20want%20to%20order%20this%20Kabaddi%20Kit%20for%20%E2%82%B9699." target="_blank" style="display:inline-block; background:#25D366; color:white; padding:10px 15px; text-decoration:none; border-radius:8px;">
+      Order on WhatsApp
+    </a>
+  </div>
+</section>
 
 <article class="item">
 <img src="https://via.placeholder.com/300x200?text=Super+Polly+Kabaddi+Kit" alt="Super Polly Kabaddi Kit" loading="lazy">
