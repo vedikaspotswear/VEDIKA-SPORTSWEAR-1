@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vedika Sports Wear</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin:0; padding:0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 25px 15px;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0 0 8px;
+    font-size: 2.5rem;
+  }
+  header p {
+    margin: 0;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #ddd;
+  }
+  nav {
+    background: #333;
+    text-align: center;
+    padding: 12px 0;
+  }
+  nav a {
+    color: white;
+    margin: 0 18px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  section.catalog {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+  }
+  .item {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+    transition: transform 0.2s ease;
+  }
+  .item:hover {
+    transform: translateY(-5px);
+  }
+  .item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 12px;
+  }
+  .item h3 {
+    margin: 8px 0 6px;
+    font-size: 1.3rem;
+    color: #1a1a1a;
+  }
+  .item p {
+    font-size: 0.95rem;
+    margin: 6px 0 10px;
+    color: #555;
+  }
+  .price {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #007BFF;
+  }
+  section.about {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.07);
+  }
+  section.about h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+    color: #1a1a1a;
+    text-align: center;
+  }
+  section.about p {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #444;
+  }
+  .contact-section {
+    max-width: 900px;
+    margin: 40px auto 60px;
+    padding: 25px 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.07);
+    text-align: center;
+  }
+  .contact-section h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+    color: #1a1a1a;
+  }
+  .contact-section p {
+    font-size: 1.1rem;
+    margin: 6px 0;
+    color: #222;
+  }
+  .whatsapp-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 9999;
+    transition: background-color 0.3s ease;
+  }
+  .whatsapp-btn:hover {
+    background-color: #1ebe57;
+  }
+  footer {
+    background-color: #1a1a1a;
+    color: #ccc;
+    text-align: center;
+    padding: 14px 10px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+  }
+  footer a {
+    color: #4da6ff;
+    text-decoration: none;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+  @media(max-width:600px){
+    nav a {
+      margin: 0 10px;
+      font-size: 0.9rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Vedika Sports Wear</h1>
+  <p>From Field to Fame – Dress Like a Pro.</p>
+</header>
+
+<nav>
+  <a href="#catalog">Products</a>
+  <a href="#about">About Us</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="catalog" class="catalog" aria-label="Product Catalog">
+
+  <article class="item">
+    <img src="https://via.placeholder.com/300x200?text=Super+Polly+Kabaddi+Kit" alt="Super Polly Kabaddi Kit">
+    <h3>Super Polly Kabaddi Kit</h3>
+    <p>Comfortable, lightweight kabaddi kit perfect for practice and tournaments.</p>
+    <p class="price">₹499</p>
+  </article>
+
+  <article class="item">
+    <img src="https://via.placeholder.com/300x200?text=Cricket+Jersey" alt="Cricket Jersey">
+    <h3>Cricket Jersey</h3>
+    <p>Breathable cricket jersey with custom printing available.</p>
+    <p class="price">₹349</p>
+  </article>
+
+  <article class="item">
+    <img src="https://via.placeholder.com/300x200?text=Track+Suit+NS" alt="Track Suit NS">
+    <h3>Track Suit NS</h3>
+    <p>Premium quality track suit for warm-up and fitness training.</p>
+    <p class="price">₹999</p>
+  </article>
+
+  <article class="item">
+    <img src="https://via.placeholder.com/300x200?text=Football+Kit" alt="Football Kit">
+    <h3>Football Kit</h3>
+    <p>Stylish and durable football set including jersey and shorts.</p>
+    <p class="price">₹549</p>
+  </article>
+
+  <article class="item">
+    <img src="https://via.placeholder.com/300x200?text=LYCRA+Kabaddi+Kit" alt="LYCRA Kabaddi Kit">
+    <h3>LYCRA Kabaddi Kit</h3>
+    <p>Stretchable LYCRA material kit made for performance and comfort.</p>
+    <p class="price">₹699</p>
+  </article>
+
+</section>
+
+<section id="about" class="about" aria-label="About Vedika Sports Wear">
+  <h2>About Us</h2>
+  <p>Vedika Sports Wear is a trusted name in custom sportswear manufacturing. Based in Launa, Jalaun (U.P.), we specialize in designing and producing high-quality sports kits for Kabaddi, Cricket, Football, and more.</p>
+  <p>We also manufacture school uniforms, including T-shirts and lowers, tailored for comfort and durability. With a focus on quality stitching, modern design, and affordable pricing, Vedika Sports Wear is committed to powering every player — from school teams to tournament champs.</p>
+</section>
+
+<section id="contact" class="contact-section" aria-label="Contact Vedika Sports Wear">
+  <h2>Contact Us</h2>
+  <p><strong>WhatsApp:</strong> <a href="https://wa.me/917376354681" target="_blank" rel="noopener">+91 73763 54681</a></p>
+  <p><strong>Instagram:</strong> <a href="https://www.instagram.com/vedika_sports_wear" target="_blank" rel="noopener">@vedika_sports_wear</a></p>
+  <p><strong>GST Number:</strong> 09IHLPD1686R1ZC</p>
+</section>
+
+<a href="https://wa.me/917376354681" class="whatsapp-btn" target="_blank" aria-label="Chat on WhatsApp">
+  &#x2709;
+</a>
+
+<footer>
+  <p>&copy; 2025 Vedika Sports Wear. All rights reserved. | GST: 09IHLPD1686R1ZC</p>
+</footer>
+
+</body>
+</html>
