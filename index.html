@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -6,7 +6,7 @@
   <title>Vedika Sports Wear</title>
   <meta name="description" content="Vedika Sports Wear - Custom Kabaddi, Cricket, Football kits and school uniforms from Launa, Jalaun." />
   <meta name="keywords" content="Vedika Sports Wear, Kabaddi Kit, Cricket Jersey, School Uniforms, Custom Sportswear, Jalaun, Launa" />
-  <link rel="icon" href="images/logo.png" type="image/png" />
+  <link rel="icon" href="images/20250510_162619.png" type="image/png" />
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -18,44 +18,33 @@
     header {
       background-color: #1a1a1a;
       color: white;
-      padding: 25px 15px;
+      padding: 20px 15px;
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
-    .logo {
-      display: flex;
-      align-items: center;
-    }
-    .logo img {
+    header img {
       height: 60px;
       margin-right: 15px;
     }
-    .header-text {
-      flex: 1;
+    .header-left {
+      display: flex;
+      align-items: center;
     }
-    .header-text h1 {
-      margin: 0 0 5px;
-      font-size: 2.5rem;
-    }
-    .header-text p {
+    .header-left h1 {
       margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 4px 0 0;
       font-style: italic;
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: #ddd;
     }
     nav {
       background: #333;
       text-align: center;
-      padding: 12px 10px;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-    .nav-links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      padding: 10px 0;
     }
     nav a {
       color: white;
@@ -67,10 +56,15 @@
     nav a:hover {
       text-decoration: underline;
     }
+    .search-bar {
+      margin-top: 10px;
+      text-align: center;
+    }
     .search-bar input {
-      padding: 6px 10px;
-      border-radius: 4px;
-      border: none;
+      padding: 8px;
+      width: 80%;
+      max-width: 400px;
+      font-size: 1rem;
     }
     section.catalog {
       max-width: 1100px;
@@ -112,6 +106,15 @@
       font-size: 1.1rem;
       color: #007BFF;
     }
+    .item a.whatsapp-link {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 8px;
+    }
     section.about,
     .contact-section {
       max-width: 900px;
@@ -127,12 +130,6 @@
       font-size: 2rem;
       color: #1a1a1a;
       text-align: center;
-    }
-    section.about p,
-    .contact-section p {
-      line-height: 1.6;
-      font-size: 1rem;
-      color: #444;
     }
     .contact-section {
       text-align: center;
@@ -173,23 +170,14 @@
     footer a:hover {
       text-decoration: underline;
     }
-    @media (max-width: 600px) {
-      nav a {
-        margin: 0 10px;
-        font-size: 0.9rem;
-      }
-      .logo img {
-        height: 45px;
-      }
-    }
   </style>
 </head>
 <body>
 
 <header>
-  <div class="logo">
-    <img src="images/logo.png" alt="Vedika Logo">
-    <div class="header-text">
+  <div class="header-left">
+    <img src="images/20250510_162619.png" alt="Vedika Logo">
+    <div>
       <h1>Vedika Sports Wear</h1>
       <p>From Field to Fame – Dress Like a Pro.</p>
     </div>
@@ -197,25 +185,23 @@
 </header>
 
 <nav>
-  <div class="nav-links">
-    <a href="#catalog">Products</a>
-    <a href="#about">About Us</a>
-    <a href="#contact">Contact</a>
-  </div>
-  <div class="search-bar">
-    <input type="text" placeholder="Search...">
-  </div>
+  <a href="#catalog">Products</a>
+  <a href="#about">About Us</a>
+  <a href="#contact">Contact</a>
 </nav>
 
-<section id="catalog" class="catalog">
+<div class="search-bar">
+  <input type="text" placeholder="Search products...">
+</div>
 
+<section id="catalog" class="catalog" aria-label="Product Catalog">
   <article class="item">
     <img src="images/20250226_105407.jpg" alt="Kabaddi Kit">
     <h3>Kabaddi Kit</h3>
     <p><strong>Sublimation:</strong> Full</p>
     <p><strong>Fabric:</strong> Lycra</p>
     <p class="price">₹699</p>
-    <a href="https://wa.me/917376354681?text=Hi%20Deepraj%2C%20I%20want%20to%20order%20this%20Kabaddi%20Kit%20for%20%E2%82%B9699." target="_blank" style="display:inline-block; background:#25D366; color:white; padding:10px 15px; text-decoration:none; border-radius:8px;">Order on WhatsApp</a>
+    <a class="whatsapp-link" href="https://wa.me/917376354681?text=Hi%20Deepraj%2C%20I%20want%20to%20order%20the%20Kabaddi%20Kit%20for%20%E2%82%B9699." target="_blank">Order on WhatsApp</a>
   </article>
 
   <article class="item">
@@ -223,6 +209,7 @@
     <h3>Super Polly Kabaddi Kit</h3>
     <p>Comfortable, lightweight kabaddi kit perfect for practice and tournaments.</p>
     <p class="price">₹499</p>
+    <a class="whatsapp-link" href="https://wa.me/917376354681?text=Hi%20Deepraj%2C%20I%20want%20to%20order%20the%20Super%20Polly%20Kabaddi%20Kit%20for%20%E2%82%B9499." target="_blank">Order on WhatsApp</a>
   </article>
 
   <article class="item">
@@ -230,6 +217,7 @@
     <h3>Cricket Jersey</h3>
     <p>Breathable cricket jersey with custom printing available.</p>
     <p class="price">₹349</p>
+    <a class="whatsapp-link" href="https://wa.me/917376354681?text=Hi%20Deepraj%2C%20I%20want%20to%20order%20the%20Cricket%20Jersey%20for%20%E2%82%B9349." target="_blank">Order on WhatsApp</a>
   </article>
 
   <article class="item">
@@ -237,6 +225,7 @@
     <h3>Track Suit NS</h3>
     <p>Premium quality track suit for warm-up and fitness training.</p>
     <p class="price">₹999</p>
+    <a class="whatsapp-link" href="https://wa.me/917376354681?text=Hi%20Deepraj%2C%20I%20want%20to%20order%20the%20Track%20Suit%20NS%20for%20%E2%82%B9999." target="_blank">Order on WhatsApp</a>
   </article>
 
   <article class="item">
@@ -244,6 +233,7 @@
     <h3>Football Kit</h3>
     <p>Stylish and durable football set including jersey and shorts.</p>
     <p class="price">₹549</p>
+    <a class="whatsapp-link" href="https://wa.me/917376354681?text=Hi%20Deepraj%2C%20I%20want%20to%20order%20the%20Football%20Kit%20for%20%E2%82%B9549." target="_blank">Order on WhatsApp</a>
   </article>
 
   <article class="item">
@@ -251,17 +241,17 @@
     <h3>LYCRA Kabaddi Kit</h3>
     <p>Stretchable LYCRA material kit made for performance and comfort.</p>
     <p class="price">₹699</p>
+    <a class="whatsapp-link" href="https://wa.me/917376354681?text=Hi%20Deepraj%2C%20I%20want%20to%20order%20the%20LYCRA%20Kabaddi%20Kit%20for%20%E2%82%B9699." target="_blank">Order on WhatsApp</a>
   </article>
-
 </section>
 
-<section id="about" class="about">
+<section id="about" class="about" aria-label="About Vedika Sports Wear">
   <h2>About Us</h2>
   <p>Vedika Sports Wear is a trusted name in custom sportswear manufacturing. Based in Launa, Jalaun (U.P.), we specialize in designing and producing high-quality sports kits for Kabaddi, Cricket, Football, and more.</p>
   <p>We also manufacture school uniforms, including T-shirts and lowers, tailored for comfort and durability. With a focus on quality stitching, modern design, and affordable pricing, Vedika Sports Wear is committed to powering every player — from school teams to tournament champs.</p>
 </section>
 
-<section id="contact" class="contact-section">
+<section id="contact" class="contact-section" aria-label="Contact Vedika Sports Wear">
   <h2>Contact Us</h2>
   <p><strong>Owner:</strong> Deepraj</p>
   <p><strong>WhatsApp:</strong> <a href="https://wa.me/917376354681" target="_blank" rel="noopener">+91 73763 54681</a></p>
