@@ -8,29 +8,6 @@
   <meta name="keywords" content="Vedika Sports Wear, Kabaddi Kit, Cricket Jersey, School Uniforms, Custom Sportswear, Jalaun, Launa" />
   <link rel="icon" href="images/20250510_162619.png" type="image/png" />
   <style>
-    /* Preloader */
-    ##preloader {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: white;
-  z-index: 99999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  opacity: 1;
-  transition: opacity 1s ease;
-}
-#preloader.hide {
-  opacity: 0;
-  pointer-events: none;
-}
-    #preloader img {
-      width: 100px;
-      height: auto;
-      margin-bottom: 20px;
-
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -38,6 +15,38 @@
       background-color: #f9f9f9;
       color: #333;
     }
+
+    /* Preloader Style */
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: white;
+      z-index: 99999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transition: opacity 1s ease, visibility 1s ease;
+    }
+
+    #preloader.fade-out {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    #preloader img {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+
+    #preloader h2 {
+      font-size: 1.5rem;
+      color: #1a1a1a;
+    }
+
     header {
       background-color: #1a1a1a;
       color: white;
@@ -109,8 +118,8 @@
     }
     .item img {
       width: 100%;
-      height: 200px;
-      object-fit: cover;
+      height: auto;
+      object-fit: contain;
       border-radius: 10px;
       margin-bottom: 12px;
     }
@@ -199,10 +208,8 @@
 
 <!-- Preloader -->
 <div id="preloader">
-  <div class="preloader-content">
-    <img src="images/20250510_162619.png" alt="Vedika Logo" />
-    <h2>Welcome to Vedika Sports Wear</h2>
-  </div>
+  <img src="images/20250510_162619.png" alt="Vedika Logo">
+  <h2>Welcome to Vedika Sports Wear</h2>
 </div>
 
 <header>
@@ -236,7 +243,7 @@
   </article>
 
   <article class="item">
-    <img src="images/IMG-20241123-WA0015.jpg" alt="Super Polly Kabaddi Kit" style="object-fit: contain; background: #fff;">
+    <img src="images/IMG-20241123-WA0015.jpg" alt="Super Polly Kabaddi Kit">
     <h3>Super Polly Kabaddi Kit</h3>
     <p>Comfortable, lightweight kabaddi kit perfect for practice and tournaments.</p>
     <p class="price">₹499</p>
@@ -252,7 +259,7 @@
   </article>
 
   <article class="item">
-    <img src="images/20241216_165239.jpg" alt="Track Suit NS">
+    <img src="images/d r.png" alt="Track Suit NS">
     <h3>Track Suit NS</h3>
     <p>Premium quality track suit for warm-up and fitness training.</p>
     <p class="price">₹999</p>
@@ -296,17 +303,13 @@
   <p>© 2025 Vedika Sports Wear. All rights reserved. | GST: 09IHLPD1686R1ZC</p>
 </footer>
 
-<!-- Preloader JS -->
 <script>
-  window.addEventListener('load', () => {
-    setTimeout(() => {
-      const preloader = document.getElementById('preloader');
-      preloader.classList.add('hide');
-      setTimeout(() => {
-        preloader.style.display = 'none';
-      }, 1000); // Wait for fade out animation
-    }, 2000); // 2 seconds delay before hiding
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      document.getElementById('preloader').classList.add('fade-out');
+    }, 2000); // 2 second delay
   });
 </script>
+
 </body>
 </html>
