@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -214,4 +214,84 @@
   <article class="item">
     <img src="https://vedikaspotswear.github.io/VEDIKA-SPORTSWEAR-1/images/20250226_105407.jpg" alt="Kabaddi Kit">
     <h3>Kabaddi Kit</h3>
-    <
+    <p><strong>Sublimation:</strong> Full</p>
+    <p><strong>Fabric:</strong> Lycra</p>
+    <p class="price">₹699</p>
+    <a href="https://wa.me/917376354681?text=Hi%20Deepraj%2C%20I%20want%20to%20order%20this%20Kabaddi%20Kit%20for%20%E2%82%B9699." target="_blank" style="display:inline-block; background:#25D366; color:white; padding:10px 15px; text-decoration:none; border-radius:8px;">Order on WhatsApp</a>
+  </article>
+
+  <article class="item">
+    <img src="https://vedikaspotswear.github.io/VEDIKA-SPORTSWEAR-1/images/super_polly_kabaddi_kit.jpg" alt="Super Polly Kabaddi Kit">
+    <h3>Super Polly Kabaddi Kit</h3>
+    <p>Comfortable, lightweight kabaddi kit perfect for practice and tournaments.</p>
+    <p class="price">₹499</p>
+  </article>
+
+  <article class="item">
+    <img src="https://vedikaspotswear.github.io/VEDIKA-SPORTSWEAR-1/images/cricket_jersey.jpg" alt="Cricket Jersey">
+    <h3>Cricket Jersey</h3>
+    <p>Breathable cricket jersey with custom printing available.</p>
+    <p class="price">₹349</p>
+  </article>
+
+  <article class="item">
+    <img src="https://vedikaspotswear.github.io/VEDIKA-SPORTSWEAR-1/images/track_suit_ns.jpg" alt="Track Suit NS">
+    <h3>Track Suit NS</h3>
+    <p>Premium quality track suit for warm-up and fitness training.</p>
+    <p class="price">₹999</p>
+  </article>
+
+  <article class="item">
+    <img src="https://vedikaspotswear.github.io/VEDIKA-SPORTSWEAR-1/images/football_kit.jpg" alt="Football Kit">
+    <h3>Football Kit</h3>
+    <p>Stylish and durable football set including jersey and shorts.</p>
+    <p class="price">₹549</p>
+  </article>
+
+  <article class="item">
+    <img src="https://vedikaspotswear.github.io/VEDIKA-SPORTSWEAR-1/images/lycra_kabaddi_kit.jpg" alt="LYCRA Kabaddi Kit">
+    <h3>LYCRA Kabaddi Kit</h3>
+    <p>Stretchable LYCRA material kit made for performance and comfort.</p>
+    <p class="price">₹699</p>
+  </article>
+
+</section>
+
+<section id="about" class="about" aria-label="About Vedika Sports Wear">
+  <h2>About Us</h2>
+  <p>Vedika Sports Wear is a trusted name in custom sportswear manufacturing. Based in Launa, Jalaun (U.P.), we specialize in designing and producing high-quality sports kits for Kabaddi, Cricket, Football, and more.</p>
+  <p>We also manufacture school uniforms, including T-shirts and lowers, tailored for comfort and durability. With a focus on quality stitching, modern design, and affordable pricing, Vedika Sports Wear is committed to powering every player — from school teams to tournament champs.</p>
+</section>
+
+<section id="contact" class="contact-section" aria-label="Contact Vedika Sports Wear">
+  <h2>Contact Us</h2>
+  <p><strong>Owner:</strong> Deepraj</p>
+  <p><strong>WhatsApp:</strong> <a href="https://wa.me/917376354681" target="_blank" rel="noopener">+91 73763 54681</a></p>
+  <p><strong>Instagram:</strong> <a href="https://www.instagram.com/vedika_sports_wear" target="_blank" rel="noopener">@vedika_sports_wear</a></p>
+  <p><strong>GST Number:</strong> 09IHLPD1686R1ZC</p>
+</section>
+
+<a href="https://wa.me/917376354681" class="whatsapp-btn" target="_blank" aria-label="Chat on WhatsApp">📱</a>
+
+<footer>
+  <p>© 2025 Vedika Sports Wear. All rights reserved. | GST: 09IHLPD1686R1ZC</p>
+</footer>
+
+<script>
+  function filterProducts() {
+    const input = document.getElementById('productSearch');
+    const filter = input.value.toLowerCase();
+    const items = document.querySelectorAll('.catalog .item');
+    items.forEach(item => {
+      const text = item.textContent.toLowerCase();
+      if (text.includes(filter)) {
+        item.style.display = '';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
