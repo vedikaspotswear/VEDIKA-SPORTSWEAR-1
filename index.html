@@ -9,26 +9,27 @@
   <link rel="icon" href="images/20250510_162619.png" type="image/png" />
   <style>
     /* Preloader */
-    #preloader {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: white;
-      z-index: 99999;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    }
+    ##preloader {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: white;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+#preloader.hide {
+  opacity: 0;
+  pointer-events: none;
+}
     #preloader img {
       width: 100px;
       height: auto;
       margin-bottom: 20px;
-    }
-    #preloader h2 {
-      font-size: 1.5rem;
-      color: #333;
-    }
 
     body {
       font-family: Arial, sans-serif;
