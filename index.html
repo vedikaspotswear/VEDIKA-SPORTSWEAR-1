@@ -299,10 +299,14 @@
 <!-- Preloader JS -->
 <script>
   window.addEventListener('load', () => {
-    const preloader = document.getElementById('preloader');
-    preloader.style.display = 'none';
+    setTimeout(() => {
+      const preloader = document.getElementById('preloader');
+      preloader.classList.add('hide');
+      setTimeout(() => {
+        preloader.style.display = 'none';
+      }, 1000); // Wait for fade out animation
+    }, 2000); // 2 seconds delay before hiding
   });
 </script>
-
 </body>
 </html>
