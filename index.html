@@ -47,6 +47,47 @@
       color: #1a1a1a;
     }
 
+    /* Popup Style */
+    #popup {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 100000;
+    }
+
+    #popup > div {
+      background: white;
+      padding: 20px 30px;
+      border-radius: 10px;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    #popup h2 {
+      margin-bottom: 15px;
+    }
+
+    #popup p {
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    #popup button {
+      padding: 10px 20px;
+      background:#007BFF;
+      color: white;
+      border:none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
     header {
       background-color: #1a1a1a;
       color: white;
@@ -212,6 +253,18 @@
   <h2>Welcome to Vedika Sports Wear</h2>
 </div>
 
+<!-- Popup Disclaimer -->
+<div id="popup">
+  <div>
+    <h2>कस्टम डिज़ाइन सुविधा</h2>
+    <p>
+      हमारे यहाँ ग्राहक अपनी पसंद से आइटम प्रिंट करवा सकते हैं — हर डिज़ाइन तैयार किया जा सकता है और पूरी तरह से कस्टमाइज़ किया जा सकता है।<br><br>
+      हम आपकी सोच को वास्तविकता में बदल सकते हैं! आप जर्सी में अपना नाम, क्लब का नाम और लोगो भी लगवा सकते हैं और भी बहुत सारी चीजें कर सकते हैं।
+    </p>
+    <button onclick="closePopup()">बंद करें</button>
+  </div>
+</div>
+
 <header>
   <div class="header-left">
     <img src="images/20250510_162619.png" alt="Vedika Logo">
@@ -239,102 +292,4 @@
     <p><strong>Sublimation:</strong> Full</p>
     <p><strong>Fabric:</strong> Lycra</p>
     <p class="price">₹699.00</p>
-    <a class="whatsapp-link" href="https://wa.me/917376354681?text=Hi%20Deepraj%2C%20I%20want%20to%20order%20the%20Kabaddi%20Kit%20for%20%E2%82%B9699.00." target="_blank">Order on WhatsApp</a>
-  </article>
-
-  <article class="item">
-    <img src="images/IMG-20241123-WA0015.jpg" alt="Super Polly Kabaddi Kit">
-    <h3>Super Polly Kabaddi Kit</h3>
-    <p>Comfortable, lightweight kabaddi kit perfect for practice and tournaments.</p>
-    <p class="price">₹499.00</p>
-    <a class="whatsapp-link" href="https://wa.me/917376354681?text=Hi%20Deepraj%2C%20I%20want%20to%20order%20the%20Super%20Polly%20Kabaddi%20Kit%20for%20%E2%82%B9499.00." target="_blank">Order on WhatsApp</a>
-  </article>
-
-  <article class="item">
-    <img src="images/Picsart_25-03-02_09-13-36-307.jpg" alt="Cricket Jersey">
-    <h3>Cricket Jersey</h3>
-    <p>Breathable cricket jersey with custom printing available.</p>
-    <p class="price">₹349.00</p>
-    <a class="whatsapp-link" href="https://wa.me/917376354681?text=Hi%20Deepraj%2C%20I%20want%20to%20order%20the%20Cricket%20Jersey%20for%20%E2%82%B9349.00." target="_blank">Order on WhatsApp</a>
-  </article>
-
-  <article class="item">
-    <img src="images/d r.png" alt="Track Suit NS">
-    <h3>Track Suit NS</h3>
-    <p>Premium quality track suit for warm-up and fitness training.</p>
-    <p class="price">₹999.00</p>
-    <a class="whatsapp-link" href="https://wa.me/917376354681?text=Hi%20Deepraj%2C%20I%20want%20to%20order%20the%20Track%20Suit%20NS%20for%20%E2%82%B9999.00." target="_blank">Order on WhatsApp</a>
-  </article>
-
-  <article class="item">
-    <img src="images/Picsart_24-10-12_10-51-08-888.jpg" alt="Football Kit">
-    <h3>Football Kit</h3>
-    <p>Stylish and durable football set including jersey and shorts.</p>
-    <p class="price">₹549.00</p>
-    <a class="whatsapp-link" href="https://wa.me/917376354681?text=Hi%20Deepraj%2C%20I%20want%20to%20order%20the%20Football%20Kit%20for%20%E2%82%B9549.00." target="_blank">Order on WhatsApp</a>
-  </article>
-
-  <article class="item">
-    <img src="images/WhatsApp Image 2025-05-21 at 11.52.12_a4b436f6.jpg" alt="LYCRA Kabaddi Kit">
-    <h3>LYCRA Kabaddi Kit</h3>
-    <p>Stretchable LYCRA material kit made for performance and comfort.</p>
-    <p class="price">₹699.00</p>
-    <a class="whatsapp-link" href="https://wa.me/917376354681?text=Hi%20Deepraj%2C%20I%20want%20to%20order%20the%20LYCRA%20Kabaddi%20Kit%20for%20%E2%82%B9699.00." target="_blank">Order on WhatsApp</a>
-  </article>
-</section>
-
-  <section id="catalog" class="catalog" aria-label="Product Catalog">
-  <article class="item">
-    <img src="images/IMG-20241017-WA0007.jpg" alt="Kabaddi Kit">
-    <h3>TIGHTY</h3>
-    <p><strong>Sublimation:</strong> Full</p>
-    <p><strong>Fabric:</strong> Lycra</p>
-    <p class="price">₹249.00</p>
-    <a class="whatsapp-link" href="https://wa.me/917376354681?text=Hi%20Deepraj%2C%20I%20want%20to%20order%20the%20TIGHTY%20for%20%E2%82%B9249.00." target="_blank">Order on WhatsApp</a>
-  </article>
-
-
-     <section id="catalog" class="catalog" aria-label="Product Catalog">
-  <article class="item">
-    <img src="images/lycra lower.webp"alt="Kabaddi Kit">
-    <h3>NSLYCRA LOWER </h3>
-    <p><strong>Sublimation:</strong> NONE</p>
-    <p><strong>Fabric:</strong> NSLycra</p>
-    <p class="price">₹299.00</p>
-    <a class="whatsapp-link" href="https://wa.me/917376354681?text=Hi%20Deepraj%2C%20I%20want%20to%20order%20the%20NSLYCRA%20LOWER%20for%20%E2%82%B9299.00." target="_blank">Order on WhatsApp</a>
-  </article>
-<section id="about" class="about" aria-label="About Vedika Sports Wear" style="padding: 20px;">
-  <h2 style="color: #007BFF;">About Us</h2>
-
-  <p style="font-weight: bold; color: #007BFF; font-size: 1.1rem; margin-bottom: 15px;">
-    हमारे यहाँ ग्राहक अपनी पसंद से आइटम प्रिंट करवा सकते हैं — हर डिज़ाइन तैयार किया जा सकता है और पूरी तरह से कस्टमाइज़ किया जा सकता है। हम आपकी सोच को वास्तविकता में बदलने के लिए प्रतिबद्ध हैं!
-  </p>
-
-  <p>Vedika Sports Wear is a trusted name in custom sportswear manufacturing. Based in Launa, Jalaun (U.P.), we specialize in designing and producing high-quality sports kits for Kabaddi, Cricket, Football, and more.</p>
-  <p>We also manufacture school uniforms, including T-shirts and lowers, tailored for comfort and durability. With a focus on quality stitching, modern design, and affordable pricing, Vedika Sports Wear is committed to powering every player — from school teams to tournament champs.</p>
-</section>
-
-<section id="contact" class="contact-section" aria-label="Contact Vedika Sports Wear">
-  <h2>Contact Us</h2>
-  <p><strong>Owner:</strong> Deepraj</p>
-  <p><strong>WhatsApp:</strong> <a href="https://wa.me/917376354681" target="_blank" rel="noopener">+91 73763 54681</a></p>
-  <p><strong>Instagram:</strong> <a href="https://www.instagram.com/vedika_sports_wear" target="_blank" rel="noopener">@vedika_sports_wear</a></p>
-  <p><strong>GST Number:</strong> 09IHLPD1686R1ZC</p>
-</section>
-
-<a href="https://wa.me/917376354681" class="whatsapp-btn" target="_blank" aria-label="Chat on WhatsApp">📱</a>
-
-<footer>
-  <p>© 2025 Vedika Sports Wear. All rights reserved. | GST: 09IHLPD1686R1ZC</p>
-</footer>
-
-<script>
-  window.addEventListener('load', function () {
-    setTimeout(function () {
-      document.getElementById('preloader').classList.add('fade-out');
-    }, 2000); // 2 second delay
-  });
-</script>
-
-</body>
-</html>
+    <a class="whatsapp-link
