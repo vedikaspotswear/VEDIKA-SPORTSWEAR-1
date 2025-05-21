@@ -341,5 +341,23 @@
   });
 </script>
 
+<script>
+  const searchInput = document.getElementById('searchInput');
+
+  searchInput.addEventListener('keyup', function () {
+    const filter = searchInput.value.toLowerCase();
+    const items = document.querySelectorAll('.item');
+
+    items.forEach(function (item) {
+      const text = item.innerText.toLowerCase();
+      if (text.includes(filter)) {
+        item.style.display = '';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
